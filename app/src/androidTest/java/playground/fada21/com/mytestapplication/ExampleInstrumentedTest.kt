@@ -1,6 +1,5 @@
 package playground.fada21.com.mytestapplication
 
-import android.app.Application
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -28,12 +27,12 @@ class ExampleInstrumentedTest {
     fun useAppContextOldschool() {
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertThat("playground.fada21.com.mytestapplication").isEqualTo(appContext.packageName)
-        assertEquals("playground.fada21.com.mytestapplication", appContext.packageName)
     }
 
     @Test
     fun useAppContextNewRecommendedWay() {
-        val app: Context = ApplicationProvider.getApplicationContext() // Context here might be YourAppClass
+        // app val below might be actually YourAppClass
+        val app: Context = ApplicationProvider.getApplicationContext()
         assertEquals("playground.fada21.com.mytestapplication", app.packageName)
     }
 
