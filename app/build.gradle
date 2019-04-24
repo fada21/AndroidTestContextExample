@@ -28,14 +28,14 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
     // https://developer.android.com/training/testing/unit-testing/local-unit-tests#include-framework-dependencies
-    testImplementation 'androidx.test.ext:junit:1.0.0'
-    testImplementation 'androidx.test.ext:truth:1.0.0'
+    testImplementation 'androidx.test.ext:junit:1.1.0'
+    testImplementation 'androidx.test.ext:truth:1.1.0'
     // for https://developer.android.com/training/testing/junit-runner#app-context
-    androidTestImplementation 'androidx.test.ext:junit:1.0.0'
-    androidTestImplementation 'androidx.test.ext:truth:1.0.0'
-    androidTestImplementation 'androidx.test:core:1.0.0'
-    androidTestImplementation 'androidx.test:runner:1.1.0'
-    androidTestUtil 'androidx.test:orchestrator:1.1.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test.ext:truth:1.1.0'
+    androidTestImplementation 'androidx.test:core:1.1.0'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestUtil 'androidx.test:orchestrator:1.1.1'
 }
